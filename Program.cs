@@ -57,7 +57,21 @@
             {
                 Console.WriteLine("Person 1 is not the same age as anyone else");
             }
+            if (person1 == person2 && person1 == person3)
+            {
+                Console.WriteLine("All are the same age");
+            }
+            if (person1 != person2 && person1 != person3 && person2 != person3)
+            {
+                Console.WriteLine("None are the same age");
+            }
+            Console.WriteLine();
 
+
+            if (person1 == person2 && person2 != person3 || person2 == person3 && person2 != person1 || person3 == person1 && person3 != person2)
+            {
+                Console.WriteLine("Two of the people are the same age... but not all");
+            }
         }
     }
 }
